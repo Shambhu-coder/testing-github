@@ -12,6 +12,7 @@ const handleValidation = (req, res, next) => {
       errors: errors.array().map((e) => ({ field: e.path, message: e.msg })),
     });
   }
+  console.log("creating another branch and modifying changes");
   next();
 };
 
